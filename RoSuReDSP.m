@@ -15,7 +15,10 @@
 %                       W,E,L: as show in the equation
 %                       stat: state record of the iteration
 %%============================================================================
-
+% Author: Zhou Hao
+% Date: 2015-3-27
+% Paper: Robust Subspace Recovery via Dual Sparsity Pursuit, by Xiao Bin et
+% al.
 %%============================================================================
 %%
 function [W,E,L,stat] = RoSuReDSP(X, lambda, opt)
