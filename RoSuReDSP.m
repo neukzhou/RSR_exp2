@@ -77,7 +77,7 @@ for k = 1:maxIter
     %% Stopping Criteria
     leq = X - L*W - E;
     RelChg = norm(leq, 'fro') / (norm(X, 'fro')+epsilon);
-    if k==1 || mod(k,100)==0 || RelChg<tol
+    if k==1 || mod(k,1)==0 || RelChg<tol
         rankLW =rank(L*W,1e-3*norm(L*W,2));
         if ~QUIET
             disp(['iter ' num2str(k) ': mu=' num2str(mu,'%2.1e'), ...
